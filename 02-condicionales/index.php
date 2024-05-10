@@ -48,7 +48,19 @@ else if($edad < 18){
     echo 'No puedes ingresar a la dicoteca';
 }
 
-$david = 12;
+$articulos = "30";
+
+
+
+if($articulos < 12) {
+
+    echo "caja rapida";
+ 
+} else if($articulos > 12){
+
+    echo "caja normal";
+    
+}
 
 ?>
 
