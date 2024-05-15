@@ -17,16 +17,22 @@ while ($i <= 10) {
 
 //for imprime una lista de nombres 
 
+
 $i = 0;
 for ($i = 3; $i <= 10; $i++) {
     if ($i % 3 == 0) {
-        echo 'multiplo de 3';
+        echo "$i multiplo de 3";
     }
+    echo"<br>";
 }
-
-
 
 // foreach 
 
+$vengadores = array("spiderman", "ironman", "panteranegra");
+
+foreach ($vengadores as $x) {
+  if ($x == "spiderman") continue;
+  echo "$x <br>";
+}
 
 ?>
