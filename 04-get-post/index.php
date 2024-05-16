@@ -1,4 +1,5 @@
 <?php
+//comentario modificado 
 
 //superglobals GET Y POST
 
@@ -40,3 +41,4 @@ echo $useremail;
 
 </body>
 </html>
+
