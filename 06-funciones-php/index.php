@@ -24,7 +24,7 @@
     function ValidarEdad($edad){
         if($edad >= 18){
             echo "mayor de edad";
-        }else if($edad < 18){
+        }else if($edad && $edad < 18){
             echo "menor de edad";
         }
     }   
@@ -34,3 +34,6 @@
 
 
 ?>
+
+
+
