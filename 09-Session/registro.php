@@ -35,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               
                 $statement->execute(array(":username"=>$usuario, ":pass"=>$password, ":correo"=>$email)); 
 
-              
+                 
+                
  
 
              

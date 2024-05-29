@@ -11,16 +11,37 @@ if( $_SERVER["REQUEST_METHOD"] == 'POST' ){
         if( empty($usuario) or empty($password) ){
             echo 'rellene completo el formulario';
         }else{
-            echo $usuario . ' - ' . $password;
+           /*  echo $usuario . ' - ' . $password;
             if( $usuario == $user_register && $password == $pass_register){
                 echo 'listo, iniciaste sesion 👻';
                 header('location: user.php');
-            }else{  echo 'Tu usuario no existe😴';}
-                
+            }else{  echo 'Tu usuario no existe😴';} */
+
+            //CONEXION CON LA BASE DE DATOS DE
+
+            try {
+                $conexion = new PDO("mysql: host=localhost; dbname=focaapp;", 'root','');
+                echo "conexion OK";
+            } catch (PDOException $e) {
+               echo "Error: " . $e->getMessage();
+            }
+
+            $statement = $conexion->prepare("SELECT * FROM userapp
+            WHERE username = :user AND contraseña = :pass");
             
+            $statement->execute(array(':user'=>$usuario, ':pass'=>$password)); 
+        
+            $result = $statement->fetchAll();
+
+            if ($result) {
+                $_SESSION['userRegister'] = $usuario;
+                $_SESSION['passRegister'] = $password;
+                header('location:user.php');
+            }else{
+                echo 'false';
+            }
         }
 
-        
 
 }
     //$_SESSION['pais'] = 'colombia';
