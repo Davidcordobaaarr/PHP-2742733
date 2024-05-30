@@ -1,0 +1,19 @@
+
+*{
+    background-color: rgb(158, 158, 158);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.register{
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.registro{
+
+    background: black;
+
+
+}

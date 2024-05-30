@@ -59,24 +59,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="registro.css">
 </head>
 
 <body>
 
-    <h1>registrate</h1>
-
-    <form action="registro.php" method="POST">
-        <label for="user">usuario</label>
-        <input type="text" placeholder="usuario" name="user">
-        <label for="password">contraseña</label>
-        <input type="text" placeholder="password" name="password">
-        <label for="mail">correo</label>
-        <input type="email" placeholder="email" name="email">
-        <button type="submit">registrate</button>
+    <h1 class="register">registrate</h1>
 
 
-    </form>
+    <div class="registro">    
 
+        <form action="registro.php" method="POST">
+            <label for="user">usuario</label>
+            <br>
+            <input type="text" placeholder="usuario" name="user">
+            <br>
+            <label for="password">contraseña</label>
+            <br>
+            <input type="text" placeholder="password" name="password">
+            <br>
+            <label for="mail">correo</label>
+            <input type="email" placeholder="email" name="email">
+            <button type="submit">registrate</button>
+            
+            
+        </form>
+
+    </div>
+        
     <?php if( isset($_SESSION['userRegister']) ) : ?>
         <p>Datos registrados, ya puedes iniciar sesion</p>
         <p> <?php echo $_SESSION['userRegister'] . ' - ' . $_SESSION ['passRegister'] ?> </p>
