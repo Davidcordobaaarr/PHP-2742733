@@ -17,7 +17,10 @@ if( $_SERVER["REQUEST_METHOD"] == 'POST' ){
                 header('location: user.php');
             }else{  echo 'Tu usuario no existe😴';} */
 
-            //CONEXION CON LA BASE DE DATOS DE
+            //CONEXION CON LA BASE DE DATOS......
+            //entrega final
+
+
 
             try {
                 $conexion = new PDO("mysql: host=localhost; dbname=focaapp;", 'root','');
