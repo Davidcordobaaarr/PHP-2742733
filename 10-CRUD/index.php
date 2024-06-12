@@ -58,25 +58,29 @@ if( $_SERVER["REQUEST_METHOD"] == 'POST' ){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
-    <div class="inicio">
+    <div class="padre">
+    
+        <div class="inicio">
+            
+            <h1>paginaaa</h1>
+            
+            <form action="index.php" method="POST">
+                <label for="user">usuario</label>
+                <input type="text" placeholder="usuario" name="user">
+                <label for="password">contraseña</label>
+                <input type="text" placeholder="password" name="password">
+                <button type="submit">Inicio sesion</button>
+                
+                
+            </form>
+            
+            <a href="./registro.php">registrate</a>
 
-        <h1>pagina de inicio</h1>
-        
-        <form action="index.php" method="POST">
-            <label for="user">usuario</label>
-            <input type="text" placeholder="usuario" name="user">
-            <label for="password">contraseña</label>
-            <input type="text" placeholder="password" name="password">
-            <button type="submit">Inicio sesion</button>
-            
-            
-        </form>
-        
-        <a href="./registro.php">registrate</a>
+        </div>
         
     </div>
 

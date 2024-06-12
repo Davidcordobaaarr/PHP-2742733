@@ -36,6 +36,19 @@ session_start();
 
         </div>
 
+        <form action="agregar_curso.php" method="POST">
+            <label for="tituloCurso">Agregar curso</label>
+            <input type="text" name="tituloCurso" id="tituloCurso" placeholder="Agregar curso">
+            <label for="imagenCurso">Agregar imagen</label>
+            <input type="file" name="imagenCurso" id="imagenCurso" placeholder="Agregar imagen">
+            <label for="descripcion">Descripcion Curso</label>
+            <input type="text" id="descripcion" name="descripcionCurso" placeholder="descripcion">
+            <label for="estudiantes">Estudiantes</label>
+            <input type="text" id="estudiantes" name="estudiantesCurso" placeholder="estudiantes">
+            <input type="submit" value="registrar curso">
+            
+        </form>
+
 </body>
 
 </html>

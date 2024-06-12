@@ -29,3 +29,16 @@ body{
     gap: 1px;
     
 }
+
+.padre{
+
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    
+}
