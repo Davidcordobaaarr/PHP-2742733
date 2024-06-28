@@ -1,0 +1,44 @@
+*{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fondo_index{
+    background-color: rgb(208, 80, 255) ;
+}
+
+.no-link {
+    text-decoration: none;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: rgb(231, 164, 255);
+    border: none;
+    position: relative;
+    top: 1.5rem;
+    border-radius: 20px;
+}
+
+.boton a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: rgb(231, 164, 255);
+    border: none;
+    position: relative;
+    top: 0.1rem;
+}
+
+.control{
+    width: 40rem;
+}
+
+.fondo_control{
+    background-color: rgb(231, 164, 255);
+    border-radius: 20px;
+}
+
+
